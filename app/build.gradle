@@ -1,0 +1,34 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.example.restclients2"
+        minSdkVersion 14
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:21.0.3'
+//    compile 'org.lucasr.twowayview:core:1.0.0-SNAPSHOT@aar'
+//    compile 'org.lucasr.twowayview:layouts:1.0.0-SNAPSHOT@aar'
+//compile 'org.lucasr.twowayview:twowayview:0.1.4'
+// compile 'org.lucasr.twowayview:twowayview:0.1.1'
+// compile project('twowayview-view-master:twowayview-view-master:twowayview')
+ compile project(':androidHorizontalListView')
+// compile project(':devsmartAndroid')
+}

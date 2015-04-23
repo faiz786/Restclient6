@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="@drawable/border"
+        android:id="@+id/ll1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Settings"
+            android:id="@+id/tv1" />
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ll1"
+
+        android:id="@+id/ll2">
+
+        <RelativeLayout
+            android:id="@+id/ll3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/border"
+            android:layout_weight="1" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="@drawable/border"
+                android:text="Request"
+                android:id="@+id/tv2" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_below="@+id/tv2"
+                android:text="prefix the search string with http://"
+                android:id="@+id/tv4" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/tv2"
+                android:layout_alignParentRight="true"
+                android:layout_toLeftOf="@id/tv4"
+                android:text=""
+
+                android:id="@+id/cb1"
+                />
+
+            <!--  android:layout_alignParentLeft="true"
+          android:layout_marginLeft="10dp"-->
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/border"
+            android:layout_weight="1" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="@drawable/border"
+                android:text="Response"
+                android:id="@+id/tv3" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_below="@+id/tv3"
+                android:text="Fontsize:"
+                android:id="@+id/tv5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_toLeftOf="@+id/b2"
+                android:layout_marginTop="25dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_below="@+id/tv3"
+                android:text=""
+                android:id="@+id/tv6" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv3"
+               android:layout_marginRight="5dp"
+                android:id="@+id/b1"
+                android:text="+"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_toLeftOf="@+id/b1"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tv3"
+                android:layout_marginRight="2dp"
+
+                android:id="@+id/b2"
+                android:text="-"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+      <!--  <LinearLayout
+            android:layout_width="50%"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/ll1"
+            android:id="@+id/ll2">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="REQUEST"
+                android:id="@+id/tv2" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="50%"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/ll1"
+            android:layout_toRightOf="@+id/ll2"
+            android:layout_toEndOf="@+id/ll2"
+            android:id="@+id/ll3">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Response"
+                android:id="@+id/tv3" />
+
+        </LinearLayout>-->
+
+
+
+
+   <!-- <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/ll2"
+        android:layout_toEndOf="@+id/ll2"
+        android:layout_marginLeft="181dp"
+        android:layout_marginStart="181dp"></LinearLayout>-->
+
+
+
+
+</RelativeLayout>

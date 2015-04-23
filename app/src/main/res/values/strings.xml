@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Retsclients2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="action">
+
+        <item>get</item>
+        <item>post</item>
+
+    </string-array>
+
+    <string-array name="list">
+        <item>faizan</item>
+        <item>faizan</item>
+        <item>faizan</item>
+
+    </string-array>
+
+
+
+</resources>
