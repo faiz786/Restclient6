@@ -34,7 +34,6 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.PopupWindow;
-import android.widget.SimpleAdapter;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.SimpleCursorAdapter;
 import android.widget.Spinner;
@@ -44,15 +43,13 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.view.View.OnClickListener;
 
 import org.apache.http.Header;
-import org.apache.http.HeaderElement;
+
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
-//import org.lucasr.twowayview.*;
-//import com.devsmart.android.ui.HorizontalListView;
 import com.meetme.android.horizontallistview.HorizontalListView;
 
 import java.io.BufferedReader;
