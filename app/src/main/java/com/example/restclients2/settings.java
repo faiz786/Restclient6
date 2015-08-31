@@ -62,10 +62,10 @@ public class settings extends Activity {
 
       editor1.putBoolean("check", cb1.isChecked());
       editor1.commit();
-      pref2=getSharedPreferences(prefName2,0);
-      SharedPreferences.Editor editor2 = pref2.edit();
-      editor2.putFloat(FONT_SIZE_KEY,fontsize);
-      editor2.commit();
+//      pref2=getSharedPreferences(prefName2,0);
+//      SharedPreferences.Editor editor2 = pref2.edit();
+//      editor2.putFloat(FONT_SIZE_KEY,fontsize);
+//      editor2.commit();
 
 
 
@@ -85,8 +85,8 @@ public class settings extends Activity {
         {
             cb1.setChecked(false);
         }
-        pref2=getSharedPreferences(prefName2,0);
-        check1= pref2.getFloat(FONT_SIZE_KEY,12);
+//        pref2=getSharedPreferences(prefName2,0);
+//        check1= pref2.getFloat(FONT_SIZE_KEY,12);
 
 
     }
