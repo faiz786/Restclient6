@@ -205,7 +205,7 @@ public class settings extends Activity {
             }
         });
 
-        pref2=getSharedPreferences(prefName2,MODE_PRIVATE);
+        pref2=getSharedPreferences(prefName2,0);
         check1= pref2.getFloat(FONT_SIZE_KEY,12);
 
 

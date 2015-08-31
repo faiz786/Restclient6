@@ -398,14 +398,10 @@ public class MainActivity extends Activity  {
 //    protected void onSaveInstanceState(Bundle b)
 //    {
 //        pref2=  getSharedPreferences(prefName2, 0);
-//        SharedPreferences.Editor editor = pref2.edit();;
+//        SharedPreferences.Editor editor = pref2.edit();
 //        float font=  tv4.getTextSize();
 //        editor.putFloat(FONT_SIZE_KEY, font);
-//
 //        editor.commit();
-//
-//
-//
 //    }
 //
 //    @Override
@@ -414,7 +410,10 @@ public class MainActivity extends Activity  {
 //
 //        pref2=  getSharedPreferences(prefName2, 0);
 //        float fontSize1 = pref2.getFloat(FONT_SIZE_KEY, 0);
-//        tv4.setTextSize(fontSize1);
+//        SharedPreferences.Editor editor = pref2.edit();
+//        editor.putFloat(FONT_SIZE_KEY, fontSize1);
+//        editor.commit();
+////        tv4.setTextSize(fontSize1);
 //
 //    }
 
@@ -1333,7 +1332,7 @@ if( screen_width == 2048 ) //nexus 9 //exact width
               //  et1.setText("check box not checked");
             }
 
-        pref2=  getSharedPreferences(prefName2, MODE_PRIVATE);
+        pref2=  getSharedPreferences(prefName2,0);
         float fontSize1 = pref2.getFloat(FONT_SIZE_KEY, 11);
         tv4.setTextSize(fontSize1);
        // tv4.setText("fontsize is:"+fontSize1);
@@ -1469,7 +1468,7 @@ if( screen_width == 2048 ) //nexus 9 //exact width
         @Override
         public void onClick(View v) {
             Intent i=new Intent(MainActivity.this,settings.class);
-            pref2=  getSharedPreferences(prefName2, MODE_PRIVATE);
+            pref2=  getSharedPreferences(prefName2,0);
             SharedPreferences.Editor editor = pref2.edit();
 
 
@@ -1738,8 +1737,9 @@ if( screen_width == 2048 ) //nexus 9 //exact width
         Toast.makeText(MainActivity.this,"we are back",Toast.LENGTH_LONG).show();
         prefs = getSharedPreferences(prefName, MODE_PRIVATE);
         Boolean check = prefs.getBoolean("myval", false);
-       float fontSize1 = pref2.getFloat(FONT_SIZE_KEY, 0);
-       tv4.setTextSize(fontSize1);
+        pref2=getSharedPreferences(prefName2,0);
+        float fontSize1 = pref2.getFloat(FONT_SIZE_KEY, 0);
+        tv4.setTextSize(fontSize1);
       // tv4.setText("fontsize is:"+fontSize1);
 
         if (check) {
