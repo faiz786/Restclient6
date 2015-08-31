@@ -395,6 +395,28 @@ public class MainActivity extends Activity  {
         return (inch >= 6.2 );
     }
 
+//    protected void onSaveInstanceState(Bundle b)
+//    {
+//        pref2=  getSharedPreferences(prefName2, 0);
+//        SharedPreferences.Editor editor = pref2.edit();;
+//        float font=  tv4.getTextSize();
+//        editor.putFloat(FONT_SIZE_KEY, font);
+//
+//        editor.commit();
+//
+//
+//
+//    }
+//
+//    @Override
+//    protected void onRestoreInstanceState(Bundle b) {
+//        super.onRestoreInstanceState(b);
+//
+//        pref2=  getSharedPreferences(prefName2, 0);
+//        float fontSize1 = pref2.getFloat(FONT_SIZE_KEY, 0);
+//        tv4.setTextSize(fontSize1);
+//
+//    }
 
 
 

@@ -59,7 +59,7 @@ containing a value of this type.
         */
         public static final int HorizontalListView_android_requiresFadingEdge = 2;
         /**
-          <p>This symbol is the offset where the {@link R.attr#dividerWidth}
+          <p>This symbol is the offset where the {@link com.meetme.android.horizontallistview.R.attr#dividerWidth}
           attribute's value can be found in the {@link #HorizontalListView} array.
 
 
