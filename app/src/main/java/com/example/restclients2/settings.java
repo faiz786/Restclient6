@@ -229,6 +229,7 @@ public class settings extends Activity {
                 fontsize = check1 + i;
 
                 SharedPreferences.Editor editor=pref2.edit();
+                editor.clear();
                 editor.putFloat(FONT_SIZE_KEY,fontsize);
 
                 editor.commit();
@@ -262,6 +263,7 @@ public class settings extends Activity {
                 fontsize = check1 + i;
 
                 SharedPreferences.Editor editor=pref2.edit();
+                editor.clear();
                 editor.putFloat(FONT_SIZE_KEY, fontsize);
                 editor.commit();
                 check11=(int)fontsize;

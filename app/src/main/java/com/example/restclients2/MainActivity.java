@@ -395,27 +395,31 @@ public class MainActivity extends Activity  {
         return (inch >= 6.2 );
     }
 
-//    protected void onSaveInstanceState(Bundle b)
-//    {
-//        pref2=  getSharedPreferences(prefName2, 0);
-//        SharedPreferences.Editor editor = pref2.edit();
-//        float font=  tv4.getTextSize();
-//        editor.putFloat(FONT_SIZE_KEY, font);
-//        editor.commit();
-//    }
+    protected void onSaveInstanceState(Bundle b)
+    {
+        pref2=  getSharedPreferences(prefName2, 0);
+        SharedPreferences.Editor editor = pref2.edit();
+        editor.clear();
+        float font=  tv4.getTextSize();
+        editor.putFloat(FONT_SIZE_KEY, font);
+        editor.commit();
+    }
 //
-//    @Override
-//    protected void onRestoreInstanceState(Bundle b) {
-//        super.onRestoreInstanceState(b);
-//
-//        pref2=  getSharedPreferences(prefName2, 0);
-//        float fontSize1 = pref2.getFloat(FONT_SIZE_KEY, 0);
-//        SharedPreferences.Editor editor = pref2.edit();
-//        editor.putFloat(FONT_SIZE_KEY, fontSize1);
-//        editor.commit();
-////        tv4.setTextSize(fontSize1);
-//
-//    }
+    @Override
+    protected void onRestoreInstanceState(Bundle b) {
+        super.onRestoreInstanceState(b);
+
+        pref2=  getSharedPreferences(prefName2, 0);
+        float fontSize1 = pref2.getFloat(FONT_SIZE_KEY, 0);
+        SharedPreferences.Editor editor = pref2.edit();
+        editor.clear();
+        editor.putFloat(FONT_SIZE_KEY, fontSize1);
+        editor.commit();
+//        tv4.setTextSize(fontSize1);
+
+    }
+
+
 
 
 
@@ -1333,9 +1337,10 @@ if( screen_width == 2048 ) //nexus 9 //exact width
             }
 
         pref2=  getSharedPreferences(prefName2,0);
-        float fontSize1 = pref2.getFloat(FONT_SIZE_KEY, 11);
+        float fontSize1 = pref2.getFloat(FONT_SIZE_KEY, 14);
         tv4.setTextSize(fontSize1);
         SharedPreferences.Editor editor = pref2.edit();
+        editor.clear();
         editor.putFloat(FONT_SIZE_KEY, fontSize1);
 
         editor.commit();
@@ -1745,6 +1750,7 @@ if( screen_width == 2048 ) //nexus 9 //exact width
         pref2=getSharedPreferences(prefName2,0);
         float fontSize1 = pref2.getFloat(FONT_SIZE_KEY, 0);
         SharedPreferences.Editor editor = pref2.edit();
+        editor.clear();
         editor.putFloat(FONT_SIZE_KEY, fontSize1);
 
         editor.commit();
@@ -1787,6 +1793,17 @@ if( screen_width == 2048 ) //nexus 9 //exact width
 
     }
 
+//    @Override
+//    protected void onRestart() {
+//        super.onRestart();
+//        pref2=  getSharedPreferences(prefName2, 0);
+//        float fontSize1 = pref2.getFloat(FONT_SIZE_KEY, 0);
+//        SharedPreferences.Editor editor = pref2.edit();
+//        editor.clear();
+//        editor.putFloat(FONT_SIZE_KEY, fontSize1);
+//        editor.commit();
+//
+//    }
 
     class Background extends AsyncTask<String, Void, String>
     {
